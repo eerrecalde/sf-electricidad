@@ -20,10 +20,10 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('sf-electricidad');
   });
 
-  it('should render title', () => {
+  it('should render the homepage headline', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, sf-electricidad');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Instalación, reparación y mantenimiento eléctrico');
   });
 });
